@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rock Paper Scissors Game" />
+    <meta name="author" content="Gosia Pick" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico&family=Roboto&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rock Paper Scissors Game</title>
+  </head>
+  <body>
+    <div class="game">
+      <h1 class="title">Rock Paper Scissors</h1>
+      <div class="row">
+        <div class="column col1">
+          <div class="row">
+            <input type="text" placeholder="enter your name" id="inputName" />
+            <button type="submit" class="buttons btn-font" id="save">SUBMIT NAME</button>
+          </div>
+          <img src="img/rps.gif" />
+          <div class="column">
+            <h2>Top 5 Players</h2>
+            <ul class="list" id="player-list"></ul>
+          </div>
+        </div>
+        <div class="column col2">
+          <div class="row">
+            <h2 id="message">Lets play!</h2>
+          </div>
+          <div class="row">
+            <button class="buttons choice" type="submit" id="ROCK">ROCK</button>
+            <button class="buttons choice" type="submit" id="PAPER">PAPER</button>
+            <button class="buttons choice" type="submit" id="SCISSORS">SCISSORS</button>
+          </div>
+          <div class="row">
+            <div class="column user-column">
+              <h1 id="username">User</h1>
+              <h2 class="scores" id="user-scores">Scores: 0</h2>
+              <h2 id="user-choice"></h2>
+            </div>
+            <div class="column user-column">
+              <h1>Computer</h1>
+              <h2 class="scores" id="comp-scores">Scores: 0</h2>
+              <h2 id="random"></h2>
+            </div>
+          </div>
+          <div class="row">
+            <button class="buttons btn-font" type="submit" id="reset-game">RESET GAME</button>
+            <button class="buttons btn-font" type="submit" id="reset-name">RESET NAME</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
