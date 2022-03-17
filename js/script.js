@@ -31,18 +31,18 @@
     let counter = 0;
     const countUp = () => {
       counter++;
-    }
+    };
     const reset = () => {
       counter = 0;
-    }
+    };
     const getCount = () => {
       return counter;
-  }
+    };
     return {
       countUp: countUp,
       reset: reset,
-      getCount: getCount
-    }
+      getCount: getCount,
+    };
   };
   const userScoresCounter = countScores();
 
@@ -148,8 +148,9 @@
   // Function for finishing the game
   const gameOver = () => {
     for (let i = 0; i < 5; i++) {
-      // If scores are higher than top 5 highscores add player to list and to database     
+      // If scores are higher than top 5 highscores add player to list and to database
       if (userScoresCounter.getCount() > sortedPlayers[i].scores) {
+        image.src = "img/celebration.gif";
         let player = document.createElement("li");
         player.innerText = `${playerName}: Scores: ${userScoresCounter.getCount()}`;
         playerList.appendChild(player);
@@ -187,18 +188,17 @@
     fetch(dbUrl + `/winners/${customId}.json`, init)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
+        console.log(data);
         getTopPlayers();
       })
       .catch((error) => {
         console.log(error);
       });
-    
   };
 
   // Function for disabling buttons when game is over
   const disableChoiceButtons = () => {
-    rockButton.setAttribute("disabled","");
+    rockButton.setAttribute("disabled", "");
     paperButton.setAttribute("disabled", "");
     scissorsButton.setAttribute("disabled", "");
   };
@@ -229,7 +229,7 @@
   };
 
   // Event listeners
-  
+
   // Event listener for users choice buttons (ROCK, PAPER, SCISSORS)
   buttons.forEach((btn) => {
     btn.addEventListener("click", (event) => {
@@ -245,5 +245,4 @@
 
   // Event listener for reset-button for reseting the game
   resetGameButton.addEventListener("click", resetGame);
-
 })();
