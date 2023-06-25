@@ -1,7 +1,7 @@
 # :sparkles: Rock Paper Scissors Game :sparkles:
 Rock Paper Scissors Game with Top 5 Players saved in Firebase - school project at JavaScript2 course (2022)
 
-https://margareta75.github.io/Rock-Paper-Scissors-Game-3.0/
+https://gosiacodes.github.io/Rock-Paper-Scissors-Game-3.0/
 
 ## :pushpin: _How does the application work?_
 
