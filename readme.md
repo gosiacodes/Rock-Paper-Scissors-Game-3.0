@@ -21,7 +21,7 @@ When the game is over, you can reset the game with the same name or reset the na
 
 Attention! If application doesn't work, this could happen because of changed database rules.
 
-## :pushpin: _GUI and examples_
+## :pushpin: _GUI examples_
 
 ![RPS app Peter gets to Top 5 ex](/img/RPS_1.png)
 
